@@ -1,0 +1,15 @@
+.Todo-form input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.Todo-form input[type="text"]:focus {
+  transition: 0.3s;
+}
+
+.Todo-form input[type="submit"] {
+  color: greenyellow;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}

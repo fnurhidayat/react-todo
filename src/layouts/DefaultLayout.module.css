@@ -1,0 +1,19 @@
+.DefaultLayout {
+  text-align: center;
+}
+
+.DefaultLayout :global(.DefaultLayout-header) {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.DefaultLayout :global(.DefaultLayout-container) {
+  padding: 8rem;
+  max-width: 48rem;
+}

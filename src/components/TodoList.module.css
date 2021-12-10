@@ -1,0 +1,52 @@
+.Todo {
+  text-align: start;
+}
+
+.Todo :global(.Todo-done .Todo-item) {
+  text-decoration: line-through;
+  color: greenyellow;
+}
+
+.Todo :global(.Todo-active .Todo-item) {
+  text-decoration: none;
+}
+
+.Todo :global(button.Todo-item) {
+  color: white;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  font-size: calc(10px + 2vmin);
+}
+
+.Todo :global(.Todo-item):hover {
+  color: var(--color-primary);
+}
+
+.Todo :global(.Todo-destroy) {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.Todo :global(.Todo-destroy):hover {
+  color: red;
+}
+
+.Todo :global(.Todo-edit) {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.Todo :global(.Todo-edit):hover {
+  color: yellow;
+}
+
+.Todo :global(.Todo-item) {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
